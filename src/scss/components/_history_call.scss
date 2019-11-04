@@ -1,0 +1,79 @@
+$control-size: 20px;
+$progress-bar-height: 4px;
+$progress-bar-bg-color: #F0F1F2;
+$progress-bar-played-bg-color: #C4C4C4;
+
+.history-call {
+  &__operator {
+    &-label,
+    &-name,
+    &-name>a  {
+      display: inline;
+      font-size: 12px;
+      color: $color-primary;
+    }
+  }
+
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #303235;
+    margin-bottom: 5px;
+    letter-spacing: -0.004em;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__control {
+    width: $control-size;
+    height: $control-size;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    &--pause {
+      @extend .icon-pause;
+    }
+
+    &--start {
+      @extend .icon-play;
+    }
+  }
+
+  &__progress {
+    width: calc(100% - (#{$control-size} + 10px));
+    height: $progress-bar-height;
+    border-radius: 3px;
+    background-color: $progress-bar-bg-color;
+    cursor: pointer;
+    position: relative;
+
+    &-available {
+      width: 0;
+      height: 100%;
+      background-color: $progress-bar-played-bg-color;
+      border-radius: 3px;
+    }
+
+    &-tooltip {
+      display: none;
+      align-items: center;
+      height: 17px;
+      background-color: #000;
+      color: #fff;
+      font-size: 9px;
+      padding-left: 3px;
+      padding-right: 3px;
+      border-radius: 3px;
+      position: absolute;
+      z-index: -1;
+      bottom: 10px;
+    }
+  }
+}

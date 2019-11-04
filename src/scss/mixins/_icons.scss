@@ -1,0 +1,3 @@
+@mixin getIcon($icon-path, $file-name) {
+  background-image: url(#{$icon-path}#{$file-name});
+}

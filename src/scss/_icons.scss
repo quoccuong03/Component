@@ -1,0 +1,61 @@
+$icon-path: '/assets/icons/';
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-plus-circle {
+  @include getIcon($icon-path, 'plus_circle.svg');
+}
+
+.icon-list {
+  @include getIcon($icon-path, 'list.svg');
+}
+
+.icon-check {
+  @include getIcon($icon-path, 'check.svg');
+}
+
+.icon-dropdown {
+  @include getIcon($icon-path, 'dropdown.svg');
+}
+
+.icon-select-dropdown {
+  @include getIcon($icon-path, 'select_dropdown.svg');
+}
+
+.icon-pause {
+  @include getIcon($icon-path, 'pause_solid.svg');
+}
+  
+.icon-play {
+  @include getIcon($icon-path, 'play_solid.svg');
+}
+
+.icon-audio-play {
+  @include getIcon($icon-path, 'audio_volume.svg');
+}
+
+.icon-edit {
+  @include getIcon($icon-path, 'edit_table.svg');
+}
+
+.icon-remove {
+  @include getIcon($icon-path, 'delete_table.svg');
+}
+
+.icon-arrow_in{
+background-image: url('/assets/icons/arrow_metaseo_in.png');
+width: 5px;
+height: 14px;
+}
+.icon-arrow_out{
+background-image: url('/assets/icons/arrow_metaseo_out.png')   ;
+width: 5px;
+height: 14px;
+}

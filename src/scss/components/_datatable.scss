@@ -1,0 +1,79 @@
+.datatable {
+  width: 100%;
+  table-layout: fixed;
+  border: 1px solid $color-line;
+  border-collapse: collapse;
+  margin-top: 10px;
+  position: relative;
+
+  &__no-data {
+    background-color: #fff;
+    border-left: 1px solid $color-line;
+    border-right: 1px solid $color-line;
+    border-bottom: 1px solid $color-line;
+    position: absolute;
+    left: 0;
+    right: -1px;
+    text-align: center;
+    padding: 50px 0;
+  }
+
+  &__audio {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    @extend .icon-audio-play;
+
+    &:focus {
+      border-color: $color-active;
+    }
+  }
+
+  &__thumb {
+    width: 30px;
+    height: 30px;
+    background-color: $color-line;
+    border-radius: 3px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      object-fit: cover;
+    }
+  }
+
+  thead {
+    th {
+      font-size: 14px;
+      border-bottom: 1px solid $color-inactive;
+      @extend .text-active-color;
+
+      &:first-child {
+        padding-left: $datatable-padding;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      font-size: 14px;
+      border-bottom: 1px solid $color-line;
+      padding-right: $datatable-padding;
+
+      &:first-child {
+        padding-left: $datatable-padding;
+      }
+    }
+  }
+
+  tr {
+    height: $datatable-tr-height;
+  }
+}

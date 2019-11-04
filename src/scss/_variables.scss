@@ -1,0 +1,38 @@
+// grid
+$grid-gutter-width: 20px;
+
+// colors
+$color-primary:  #20117f;
+$color-body:     #303235;
+$color-active:   #f0bc14;
+$color-inactive: #c4c4c4;
+$color-line:     #dadada;
+$color-error:    red;
+$color-success:  green;
+$color-white:    #ffff;
+// boders
+$boder-color:   $color-line;
+$border-radius: 3px;
+
+// fonts
+$font-name:        'SanFrancisco';
+$font-src-medium:  '../fonts/SanFranciscoDisplay-Medium.otf';
+$font-src-bold:    '../fonts/SanFranciscoDisplay-Bold.otf';
+$font-src-light:   '../fonts/SanFranciscoDisplay-Light.otf';
+$font-src-heavy:   '../fonts/SanFranciscoDisplay-Heavy.otf';
+
+// buttons
+$button-large-min-width:  130px;
+$button-medium-min-width: 98px;
+$button-small-min-width:  60px;
+
+$button-large-min-height:  40px;
+$button-medium-min-height: 30px;
+$button-small-min-height:  24px;
+
+// forms
+
+
+// datatable
+$datatable-tr-height: 58px;
+$datatable-padding:   20px;
